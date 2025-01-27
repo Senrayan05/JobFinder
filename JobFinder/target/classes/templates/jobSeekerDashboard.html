@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Seeker Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .sidebar {
+      height: 100vh;
+      background-color: #f8f9fa;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      color: #343a40;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      background-color: #ddd;
+      color: #007bff;
+    }
+    .main-content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+    .card-header {
+      background-color: #007bff;
+      color: white;
+    }
+    .card-body {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <h4 class="text-center">Job Seeker Dashboard</h4>
+        <a href="#">My Profile</a>
+        <a href="#">Applied Jobs</a>
+        <a href="#">Saved Jobs</a>
+        <a href="#">Job Listings</a>
+        <a href="#">Notifications</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </div>
+      <div class="col-md-9 main-content">
+        <h2>Welcome, [Job Seeker Name]</h2>
+        <div class="row">
+          <!-- Job Listings -->
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">Recent Job Listings</div>
+              <div class="card-body">
+                <ul>
+                  <li><a href="#">Software Engineer at ABC Corp</a></li>
+                  <li><a href="#">Data Analyst at XYZ Ltd</a></li>
+                  <li><a href="#">Frontend Developer at Tech Solutions</a></li>
+                  <li><a href="#">Product Manager at Innovate Tech</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Applied Jobs -->
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">My Applications</div>
+              <div class="card-body">
+                <ul>
+                  <li><a href="#">Software Engineer - ABC Corp - Applied</a></li>
+                  <li><a href="#">Frontend Developer - Tech Solutions - Interview</a></li>
+                  <li><a href="#">Product Manager - Innovate Tech - Rejected</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notifications Section -->
+        <div class="card mt-4">
+          <div class="card-header">Notifications</div>
+          <div class="card-body">
+            <ul>
+              <li>You have a new interview request from Tech Solutions.</li>
+              <li>Your application for Product Manager at Innovate Tech was rejected.</li>
+              <li>New job listing available for Software Engineers at ABC Corp.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
