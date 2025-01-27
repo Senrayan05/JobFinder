@@ -6,7 +6,7 @@ http://localhost:8080/
 #login page 
 http://localhost:8080/login    
 
-user name : asenrayan@gmail..com
+user name : asenrayan@gmail.com
 password : password
 
 ##Login successful
